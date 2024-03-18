@@ -11,7 +11,7 @@ function charactersValidation(inputItens) {
   inputItens.forEach((input, i) => {
     input.addEventListener("keydown", (e) => {
       const char = String.fromCharCode(e.keyCode || e.which);
-    
+      
       const pattern = ["[0-9]", "[0-9]", "[0-9]", "[0-9]"];
       if (i === 0) {
         if (
@@ -20,13 +20,21 @@ function charactersValidation(inputItens) {
           e.keyCode === 8 ||
           e.keyCode === 9 ||
           e.keyCode === 16 ||
+          e.keyCode === 17 ||
+          e.keyCode === 18 ||
           e.keyCode === 20 ||
           e.keyCode === 32 ||
+          e.keyCode === 37 ||
+          e.keyCode === 39 || 
           e.which === 8 ||
           e.which === 9 ||
           e.which === 16 ||
+          e.which === 17 ||
+          e.which === 18 ||
           e.which === 20 ||
-          e.which === 32 
+          e.which === 32 ||
+          e.which === 37 ||
+          e.which === 39
           ) 
         {
         } else {
@@ -38,13 +46,19 @@ function charactersValidation(inputItens) {
           e.keyCode === 8 ||
           e.keyCode === 9 ||
           e.keyCode === 16 ||
+          e.keyCode === 17 ||
+          e.keyCode === 18 ||
           e.keyCode === 20 ||
+          e.keyCode === 37 ||
+          e.keyCode === 39 ||
           e.which === 8 ||
           e.which === 9 ||
           e.which === 16 ||
           e.which === 20 ||
           (e.keyCode >= 96 && e.keyCode <= 105) ||
-          (e.which >= 96 && e.which <= 105)
+          (e.which >= 96 && e.which <= 105) ||
+          e.which === 37 ||
+          e.which === 39
         ) {
         } else {
           e.preventDefault();
