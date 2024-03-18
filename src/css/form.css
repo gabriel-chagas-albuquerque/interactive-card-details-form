@@ -1,0 +1,89 @@
+.form {
+    max-width: 320px;
+    margin:150px auto auto 250px;
+}
+
+.form li{
+    margin-bottom: 10px;
+}
+
+.form label{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+
+.form .form-itens{
+    width:100%;
+    height:35px;
+    margin-top: 5px;
+    border-radius: 7px;
+    padding:7px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+input:focus{
+    border:2px solid #600594;
+}
+
+.form .aditional-infos-titles{
+    display: flex;
+    width: 100%;
+    gap:5%;
+}
+
+.form .aditional-infos-titles label{
+    width:50%;
+}
+
+.form .aditional-infos-inputs{
+    display: flex;
+    gap:5%;
+}
+
+.form .aditional-infos-inputs .inputs-menores{
+    width:50%;
+    display:flex;
+    gap:6%;
+}
+
+
+.form .aditional-infos-inputs .input-alert-cvc{
+    width: 50%;
+}
+
+.form .error{
+    border:2px solid red;
+}
+.form .alert-error{
+    width:100%;
+    margin-top: 2px;
+    padding-left:7px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    color: red;
+    letter-spacing: 1px;
+}
+
+.form .hidden{
+    opacity: 0;
+}
+
+ button{
+    background-color: hsl(278, 68%, 11%);
+    color:#fff;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+}

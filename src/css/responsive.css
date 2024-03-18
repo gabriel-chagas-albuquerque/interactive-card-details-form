@@ -1,0 +1,26 @@
+@media (max-width:1200px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        transform: scale(0.6);
+    }
+
+    .card-back{
+        top:0;
+        right: -60px;
+    }
+
+    .card-front{
+        z-index: 1;
+        top:80px;
+        right:-10px;
+    }
+
+    .form{
+        margin: 70px auto;
+    }
+
+}
