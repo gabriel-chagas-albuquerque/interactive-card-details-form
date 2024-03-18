@@ -10,7 +10,7 @@ function maskValidationNumberCard(inputItens){
 function charactersValidation(inputItens){
     inputItens.forEach((input, i) => {
         input.addEventListener("keypress", (e) => {
-        const char = String.fromCharCode(e.keyCode);
+        const char = String.fromCharCode(e.keyCode || e.which);
         const pattern = ["[a-zA-Z ]","[0-9]", "[0-9]", "[0-9]", "[0-9]"];
         if (char.match(pattern[i])) {
         } else {
