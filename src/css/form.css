@@ -73,7 +73,7 @@ input:focus{
     opacity: 0;
 }
 
- button{
+ #btn-confirm{
     background-color: hsl(278, 68%, 11%);
     color:#fff;
     padding: 10px;

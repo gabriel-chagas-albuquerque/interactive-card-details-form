@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-ul{
+form{
     list-style-type: none;
     text-decoration: none;
 }
@@ -21,3 +21,6 @@ main{
     width: 100vw; 
 }
 
+li{
+    list-style-type: none;
+}

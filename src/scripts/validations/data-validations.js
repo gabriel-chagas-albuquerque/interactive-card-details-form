@@ -11,7 +11,7 @@ function dataValidations(inputItens) {
   ];
   const messageError = document.querySelectorAll(".alert-error");
   const maxLengthInputs = [33, 19, 2, 2, 3];
-  inputItens.forEach((input, i) => {
+ inputItens.forEach((input,i) => {
     if (input.value === "") {
       if (!input.classList.contains("error")) {
         input.classList.add("error");
@@ -40,7 +40,7 @@ function dataValidations(inputItens) {
         messageError[i].innerText = `Campo Inválido!`;
       }
     } else {
-      input.classList.remove("error");
+     input.classList.remove("error")
       messageError[i].classList.add("hidden");
       infosCard[i].innerText = input.value;
     }
